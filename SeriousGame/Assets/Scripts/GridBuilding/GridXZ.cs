@@ -1,27 +1,42 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Animations;
 
-public class GridXZ {
+
+
+public class GridXZ<TGridObject> {
 
     private int width;
     private int height;
     private float cellSize;
-    private int[,] gridArray;
+    private TGridObject[,] gridArray;
     private TextMesh[,] debugTextArray;
     private Vector3 originPosition;
 
-    public GridXZ(int width, int height, float cellSize, Vector3 originPosition)
+    public delegate TResult Func<out TResult>();
+
+    
+
+    public GridXZ(int width, int height, float cellSize, Vector3 originPosition, Func<GridXZ<TGridObject>, int, int, TGridObject> createGridObject)
     {
         this.width = width;
         this.height = height;
         this.cellSize = cellSize;
         this.originPosition = originPosition;
 
-        gridArray = new int[width,height];
+        gridArray = new TGridObject[width,height];
         debugTextArray = new TextMesh[width,height];
+
+        for(int x = 0; x<gridArray.GetLength(0); x++)
+        {
+            for(int z =0; z<gridArray.GetLength(1); z++)
+            {
+                gridArray[x, z] = createGridObject(this, x, z);
+            }
+        }
 
         for(int x = 0; x < gridArray.GetLength(0); x++)
         {
@@ -49,7 +64,7 @@ public class GridXZ {
         z = Mathf.FloorToInt((worldPosition - originPosition).z / cellSize);
     }
 
-    public void SetValue(int x, int z, int value)
+    public void SetValue(int x, int z, TGridObject value)
     {
         if (x>= 0 && z>=0 && x< width && z < height)
         {
@@ -60,14 +75,14 @@ public class GridXZ {
         
     }
 
-    public void SetValue(Vector3 worldPosition, int value)
+    public void SetValue(Vector3 worldPosition, TGridObject value)
     {
         int x, z;
         GetXZ(worldPosition, out x, out z);
         SetValue(x, z, value);
     }
 
-    public int GetValue(int x, int z)
+    public TGridObject GetValue(int x, int z)
     {
         if (x>= 0 && x< width && z>= 0 && z< height)
         {
@@ -75,11 +90,11 @@ public class GridXZ {
         }
         else
         {
-            return 0;
+            return default(TGridObject);
         }
     }
 
-    public int GetValue(Vector3 worldPosition)
+    public TGridObject GetValue(Vector3 worldPosition)
     {
         int x, z;
         GetXZ(worldPosition, out x, out z);

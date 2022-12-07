@@ -4,14 +4,30 @@ using UnityEngine;
 
 public class Testing : MonoBehaviour
 {
-    private GridXZ grid;
+    private GridXZ<GridObject> grid;
 
     [SerializeField] LayerMask mouseLayer;
     [SerializeField] private Transform mouseVisualTransform;
 
+    
+
     private void Start()
     {
-        grid = new GridXZ(4, 2, 10f, new Vector3(0, 0));
+        grid = new GridXZ<GridObject>(4, 2, 10f, new Vector3(0, 0), (GridXZ<GridObject> g, int x, int z) => new GridObject(g, x, z));
+    }
+
+    public class GridObject
+    {
+        private GridXZ<GridObject> grid;
+        private int x;
+        private int z;
+
+        public GridObject(GridXZ<GridObject> grid, int x, int z)
+        {
+            this.grid = grid;
+            this.x = x;
+            this.z = z;
+        }
     }
 
     private void Update()
@@ -26,7 +42,7 @@ public class Testing : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            grid.SetValue(mouseVisualTransform.position, 56);
+            //grid.SetValue(mouseVisualTransform.position, true);
         }
 
         if (Input.GetMouseButtonDown(1))
