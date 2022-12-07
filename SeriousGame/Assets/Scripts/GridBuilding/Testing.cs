@@ -47,7 +47,9 @@ public class Testing : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-            Debug.Log(grid.GetValue(mouseVisualTransform.position));
+            Debug.Log(grid.GetGridObject(mouseVisualTransform.position));
         }
+
+
     }
 }
