@@ -72,6 +72,7 @@ public class GridBuildingSystem : MonoBehaviour
             grid.GetXZ(mouseVisualTransform.position, out int x, out int z);
 
             GridObject gridObject = grid.GetGridObject(x, z);
+
             if(gridObject.CanBuild()) {
                 Transform builtTransform = Instantiate(testTransform, grid.GetWorldPosition(x, z), Quaternion.identity);
                 gridObject.SetTransform(builtTransform);

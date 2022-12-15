@@ -12,6 +12,8 @@ public class Graine : MonoBehaviour
     [SerializeField] private float waterNeeded;
     [SerializeField] private float dirtNeeded;
 
+    [SerializeField] public Vector3 localScale;
+
 
     [SerializeField] private ParticleSystem plantedFX;
     [SerializeField] private GameObject plant;
@@ -67,7 +69,8 @@ public class Graine : MonoBehaviour
         pFX.Play();
         GameObject p = Instantiate<GameObject>(plant);
         p.transform.position = transform.position;
-        p.transform.localScale = new Vector3(340,340,340);
+
+        p.transform.localScale = localScale;
 
         //floating text pour dire que la graine est plantée 
 

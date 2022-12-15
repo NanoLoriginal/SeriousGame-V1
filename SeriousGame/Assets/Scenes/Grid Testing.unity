@@ -152,6 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5557842f529a9a44b87ee0e9c9972c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MouseVisualTransform: {fileID: 1001324534}
+  MouseLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!4 &23214142
 Transform:
   m_ObjectHideFlags: 0
@@ -549,13 +553,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1166955083}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcac0b4df395d6945a3f53851de6a511, type: 3}
+  m_Script: {fileID: 11500000, guid: 42abef8df33a11b418e8cc1d000bc509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseVisualTransform: {fileID: 1001324534}
-  MouseLayer:
+  tilePrefab: {fileID: 178415934361582713, guid: 2b2cf3dc5c711b14fa88974436a06947,
+    type: 3}
+  sizeX: 40
+  sizeY: 40
+  layerMaskTile:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1024
 --- !u!1 &1572973029
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,6 +592,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5557842f529a9a44b87ee0e9c9972c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MouseVisualTransform: {fileID: 0}
+  MouseLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!4 &1572973031
 Transform:
   m_ObjectHideFlags: 0
