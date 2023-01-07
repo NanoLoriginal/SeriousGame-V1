@@ -1,4 +1,4 @@
-com.DefaultCompany.SeriousGame
+com.ETPAKyliannNathan.Plantis
 id unitySurfaceView
 mipmap app_icon
 mipmap app_icon_round

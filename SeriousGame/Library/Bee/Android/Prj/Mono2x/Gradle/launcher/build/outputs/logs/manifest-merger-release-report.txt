@@ -9,7 +9,7 @@ INJECTED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library
 INJECTED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 INJECTED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 	package
-		ADDED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:70-110
+		ADDED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:70-109
 		INJECTED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
 	android:versionName
@@ -17,7 +17,7 @@ INJECTED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library
 		ADDED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 		INJECTED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:111-157
+		ADDED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:110-156
 	android:versionCode
 		INJECTED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
 		ADDED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
@@ -25,7 +25,7 @@ INJECTED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library
 	xmlns:android
 		ADDED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:11-69
 	android:installLocation
-		ADDED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:158-198
+		ADDED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:157-197
 supports-screens
 ADDED from C:\Users\kylia\Documents\GitHub\SeriousGame-V1\SeriousGame\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:3-163
 	android:largeScreens

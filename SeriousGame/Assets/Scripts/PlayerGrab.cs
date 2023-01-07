@@ -8,7 +8,7 @@ public class PlayerGrab : MonoBehaviour
     private GameObject selectedObject;
 
     GameObject grRef;
-    Graine grScript;
+    TruePuzzlePieceScript grScript;
 
     [SerializeField] private LayerMask grabLayer;
 
@@ -30,7 +30,7 @@ public class PlayerGrab : MonoBehaviour
                     }
 
                     grRef = hit.collider.gameObject;
-                    grScript = grRef.GetComponent<Graine>();
+                    grScript = grRef.GetComponent<TruePuzzlePieceScript>();
 
                     selectedObject = hit.collider.gameObject;
                     Cursor.visible = false;
@@ -58,7 +58,7 @@ public class PlayerGrab : MonoBehaviour
         {
             Vector3 position = new Vector3(Input.mousePosition.x,Input.mousePosition.y, Camera.main.WorldToScreenPoint(selectedObject.transform.position).z);
             Vector3 worldPosition = Camera.main.ScreenToWorldPoint(position);
-            selectedObject.transform.position = new Vector3(worldPosition.x, 6f, worldPosition.z);
+            selectedObject.transform.position = new Vector3(worldPosition.x, 15f, worldPosition.z);
         }
     }
 

@@ -92,7 +92,7 @@ public class SwipeDetection : MonoBehaviour
         {
             Debug.Log("Swipe Up");
             Vector3 camPos = inputManager.cameraSystem.transform.position;
-            inputManager.cameraSystem.transform.position = new Vector3(camPos.x, camPos.y,camPos.z + 10f);
+            //inputManager.cameraSystem.transform.position = new Vector3(camPos.x, camPos.y,camPos.z + 10f);
 
         }
 
@@ -100,21 +100,21 @@ public class SwipeDetection : MonoBehaviour
         {
             Debug.Log("Swipe down");
             Vector3 camPos = inputManager.cameraSystem.transform.position;
-            inputManager.cameraSystem.transform.position = new Vector3(camPos.x, camPos.y, camPos.z - 10f);
+            //inputManager.cameraSystem.transform.position = new Vector3(camPos.x, camPos.y, camPos.z - 10f);
         }
 
         if (Vector2.Dot(Vector2.left, direction) > directionThreshold)
         {
             Debug.Log("Swipe left");
             Vector3 camPos = inputManager.cameraSystem.transform.position;
-            inputManager.cameraSystem.transform.position = new Vector3(camPos.x - 10f, camPos.y, camPos.z);
+            //inputManager.cameraSystem.transform.position = new Vector3(camPos.x - 10f, camPos.y, camPos.z);
         }
 
         if (Vector2.Dot(Vector2.right, direction) > directionThreshold)
         {
             Debug.Log("Swipe right");
             Vector3 camPos = inputManager.cameraSystem.transform.position;
-            inputManager.cameraSystem.transform.position = new Vector3(camPos.x + 10f, camPos.y, camPos.z );
+            //inputManager.cameraSystem.transform.position = new Vector3(camPos.x + 10f, camPos.y, camPos.z );
         }
 
 

@@ -10,7 +10,12 @@ ScriptsOnlyBuild:
     - PingButton
     - PlantArea
     - PlayerGrab
+    - PuzzleManager
+    - PuzzlePieceScript
+    - ScrollAndPinch
     - SwipeDetection
+    - TruePuzzlePieceScript
+    - TurnAnimation
     - coldArea
     - hotArea
     Cinemachine.dll:
@@ -37,6 +42,8 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.InputSystemObject
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     - UnityEngine.InputSystem.UI.InputSystemUIInputModule
+    Unity.Mobile.AndroidLogcat.Editor.dll:
+    - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Postprocessing.Runtime.dll:
     - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
     - UnityEngine.Rendering.PostProcessing.AutoExposure
@@ -55,9 +62,8 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.PostProcessing.Vignette
     Unity.ProBuilder.Editor.dll:
     - UnityEditor.ProBuilder.ProBuilderEditor
-    - UnityEditor.ProBuilder.ProbuilderMoveTool
-    - UnityEditor.ProBuilder.ProbuilderRotateTool
-    - UnityEditor.ProBuilder.ProbuilderScaleTool
+    Unity.ProBuilder.dll:
+    - UnityEngine.ProBuilder.ProBuilderMesh
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -65,6 +71,15 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -135,6 +150,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteCharacter
     - TMPro.TMP_SpriteGlyph
     - TMPro.TMP_Style
+    - TMPro.VertexGradient
     UnityEngine.CoreModule:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
@@ -203,63 +219,79 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1688}
+      Script: {instanceID: 1686}
     - Class: 114
-      Script: {instanceID: 1848}
+      Script: {instanceID: 1846}
     - Class: 114
-      Script: {instanceID: 2122}
+      Script: {instanceID: 2120}
+    - Class: 114
+      Script: {instanceID: 2170}
     - Class: 114
       Script: {instanceID: 2812}
     - Class: 114
       Script: {instanceID: 2898}
     - Class: 114
-      Script: {instanceID: 3046}
+      Script: {instanceID: 3004}
     - Class: 114
-      Script: {instanceID: 3138}
+      Script: {instanceID: 3048}
     - Class: 114
-      Script: {instanceID: 3228}
+      Script: {instanceID: 3140}
     - Class: 114
       Script: {instanceID: 3230}
     - Class: 114
-      Script: {instanceID: 3412}
+      Script: {instanceID: 3232}
     - Class: 114
-      Script: {instanceID: 3760}
+      Script: {instanceID: 3284}
     - Class: 114
-      Script: {instanceID: 4456}
+      Script: {instanceID: 3416}
     - Class: 114
-      Script: {instanceID: 4480}
+      Script: {instanceID: 3764}
     - Class: 114
-      Script: {instanceID: 4688}
+      Script: {instanceID: 3830}
     - Class: 114
-      Script: {instanceID: 5020}
+      Script: {instanceID: 4460}
     - Class: 114
-      Script: {instanceID: 5160}
+      Script: {instanceID: 4484}
     - Class: 114
-      Script: {instanceID: 5984}
+      Script: {instanceID: 4692}
     - Class: 114
-      Script: {instanceID: 6102}
+      Script: {instanceID: 5024}
     - Class: 114
-      Script: {instanceID: 6196}
+      Script: {instanceID: 5164}
     - Class: 114
-      Script: {instanceID: 6974}
+      Script: {instanceID: 5988}
     - Class: 114
-      Script: {instanceID: 7370}
+      Script: {instanceID: 6106}
     - Class: 114
-      Script: {instanceID: 7416}
+      Script: {instanceID: 6200}
     - Class: 114
-      Script: {instanceID: 8636}
+      Script: {instanceID: 6622}
     - Class: 114
-      Script: {instanceID: 8696}
+      Script: {instanceID: 6746}
     - Class: 114
-      Script: {instanceID: 9074}
+      Script: {instanceID: 6980}
     - Class: 114
-      Script: {instanceID: 9600}
+      Script: {instanceID: 7332}
+    - Class: 114
+      Script: {instanceID: 7378}
+    - Class: 114
+      Script: {instanceID: 7424}
+    - Class: 114
+      Script: {instanceID: 7644}
+    - Class: 114
+      Script: {instanceID: 8644}
+    - Class: 114
+      Script: {instanceID: 8704}
+    - Class: 114
+      Script: {instanceID: 9084}
     - Class: 114
       Script: {instanceID: 9610}
     - Class: 114
-      Script: {instanceID: 10018}
+      Script: {instanceID: 9620}
     - Class: 114
-      Script: {instanceID: 10238}
+      Script: {instanceID: 10028}
+    - Class: 114
+      Script: {instanceID: 10248}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -305,7 +337,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
@@ -320,31 +358,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1688}
+      Script: {instanceID: 1686}
     - Class: 114
       Script: {instanceID: 2554}
     - Class: 114
-      Script: {instanceID: 3138}
+      Script: {instanceID: 3140}
     - Class: 114
-      Script: {instanceID: 3412}
+      Script: {instanceID: 3416}
     - Class: 114
-      Script: {instanceID: 3826}
+      Script: {instanceID: 3830}
     - Class: 114
-      Script: {instanceID: 4306}
+      Script: {instanceID: 4310}
     - Class: 114
-      Script: {instanceID: 5262}
+      Script: {instanceID: 5266}
     - Class: 114
-      Script: {instanceID: 5616}
+      Script: {instanceID: 5620}
     - Class: 114
-      Script: {instanceID: 6618}
-    - Class: 114
-      Script: {instanceID: 7416}
+      Script: {instanceID: 6622}
     - Class: 114
       Script: {instanceID: 7424}
     - Class: 114
-      Script: {instanceID: 8034}
+      Script: {instanceID: 7432}
     - Class: 114
-      Script: {instanceID: 8094}
+      Script: {instanceID: 8042}
+    - Class: 114
+      Script: {instanceID: 8102}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -502,6 +540,12 @@ ScriptsOnlyBuild:
     className: CinemachineCameraOffset
   - hash:
       serializedVersion: 2
+      Hash: 237082aa8eaf1c3f29ea32b409948326
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PuzzlePieceScript
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Notifications.Android.dll
     namespaceName: Unity.Notifications.Android
@@ -604,6 +648,12 @@ ScriptsOnlyBuild:
     className: UnityOnBecameVisibleMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 67cdf4edb2a747646ca7425c9e489650
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScrollAndPinch
+  - hash:
+      serializedVersion: 2
       Hash: 4a03f6b1ff196600b4f44591c20b6e2b
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -668,6 +718,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineHardLookAt
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TurnAnimation
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1432,6 +1488,12 @@ ScriptsOnlyBuild:
     className: AdaptivePerformanceGeneralSettings
   - hash:
       serializedVersion: 2
+      Hash: 08fca5ba91a052bfa1453d78c73236e8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TruePuzzlePieceScript
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.AdaptivePerformance.dll
     namespaceName: UnityEngine.AdaptivePerformance
@@ -1514,6 +1576,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: CodeMonkey.Utils
     className: Button_Sprite
+  - hash:
+      serializedVersion: 2
+      Hash: 644b0ce4c4d9c27abd542ad83ac1b0b2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PuzzleManager
   - hash:
       serializedVersion: 2
       Hash: 62824bb9557c7e987502f2fbd2a26819
@@ -1796,6 +1864,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: PositionAsUV1
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DragAndDropPuzzle
   - hash:
       serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
@@ -2088,4 +2162,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/kylia/Documents/TRAVAIL/SeriousGameProto/plantis.apk
+  playerPath: C:/Users/kylia/Documents/TRAVAIL/SeriousGameProto/plantisFinal.apk
