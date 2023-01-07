@@ -1,4 +1,4 @@
-#Sat Jan 07 19:47:08 CET 2023
+#Sat Jan 07 19:53:08 CET 2023
 base.0=C\:\\Users\\kylia\\Documents\\GitHub\\SeriousGame-V1\\SeriousGame\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
